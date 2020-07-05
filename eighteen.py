@@ -6,4 +6,29 @@
 # Python.
 
 
+import json
+json_data = {
+    "user":
+        [
+            {
+                "name":"Rajeet",
+                "age":22
+            },
+            {
+                "name":"Dell",
+                "age":23
+            }
+        ]
+}
+
+
+print("Serialized")
+serialized = json.dumps(json_data, sort_keys= True, indent=4)
+print(serialized)
+
+print("Object Created")
+object_data = json.loads(serialized)
+print(object_data)
+
+
 

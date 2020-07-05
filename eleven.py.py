@@ -4,3 +4,9 @@
 # operations that will give the name without the extension. Does your
 # code work on filenames of arbitrary length?
 
+import os
+
+file_name = "hello.txt"
+print(os.path.splitext(file_name)[0])
+
+print(file_name)
